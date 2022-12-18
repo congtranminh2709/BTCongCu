@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <script language="javascript" src="main.js"></script>
+    <script language="javascript">
+   
+     var result = document.getElementsByName('result');
+
+        function sumTo(a) {
+            var a = document.getElementById('a').value;
+    let sum = 0;
+    for (var i = 1; i <= a; i++) {
+        sum += 1/i;
+    }
+   // return sum;
+    result[0].value = sum;
+    }
+      </script>
+     a: <input type="text" id="a" value="" onkeyup="sumTo()"/>
+     Kết quả: <input type="text" name="result" id="result" value=""/>
+</body>
+</html>
